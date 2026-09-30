@@ -1,0 +1,39 @@
+﻿# Stayfound Optimized - robots.txt
+# Explicitly allow AI answer engines. A page that blocks GPTBot or ClaudeBot
+# cannot be cited by ChatGPT or Claude no matter how good its schema is.
+# This is the single most important file for AI visibility. Keep it open.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://stayfoundoptimized.com/sitemap.xml
