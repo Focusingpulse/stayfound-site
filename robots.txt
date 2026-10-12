@@ -1,4 +1,4 @@
-﻿# Stayfound Optimized - robots.txt
+# Stayfound Optimized - robots.txt
 # Explicitly allow AI answer engines. A page that blocks GPTBot or ClaudeBot
 # cannot be cited by ChatGPT or Claude no matter how good its schema is.
 # This is the single most important file for AI visibility. Keep it open.

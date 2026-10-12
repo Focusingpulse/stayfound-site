@@ -3,17 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stayfound Optimized — AI Search Visibility &amp; Local SEO for Colorado Businesses</title>
-<meta name="description" content="I make local and mission-driven Colorado businesses the answer AI gives — Google, Apple, and Bing. Cited and correctly described across ChatGPT, Claude, Gemini, and Perplexity.">
+<title>Stayfound Optimized | AI Search Visibility and Local SEO for Colorado Businesses</title>
+<meta name="description" content="I make local and mission-driven Colorado businesses the answer AI gives. Google, Apple, and Bing. Cited and correctly described across ChatGPT, Claude, Gemini, and Perplexity.">
 <link rel="canonical" href="https://stayfoundoptimized.com/">
 
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1B5744">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stayfound Optimized">
+<meta property="og:title" content="Stayfound Optimized: the answer AI gives">
+<meta property="og:description" content="I make local and mission-driven Colorado businesses the answer AI gives, across Google, Apple, Bing, ChatGPT, Claude, Gemini, and Perplexity.">
+<meta property="og:url" content="https://stayfoundoptimized.com/">
+<meta property="og:image" content="https://stayfoundoptimized.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stayfound Optimized: the answer AI gives">
+<meta name="twitter:description" content="AI search visibility and local SEO for Colorado businesses. Cited and correct.">
+<meta name="twitter:image" content="https://stayfoundoptimized.com/og.png">
+
 <!--
-  SCHEMA NOTES — this block is the whole ballgame for AI citation.
-  To add prices: in the OfferCatalog below, add to each Offer:
-      "priceSpecification": { "@type": "UnitPriceSpecification",
-        "price": 450, "priceCurrency": "USD", "unitText": "MONTH" }
-  then delete the corresponding visible [ $ PRICE ] text above.
-  Add real profile URLs to "sameAs" once they exist — do not list pages that don't.
+  SCHEMA NOTES
+  - Every @id below must resolve on the live domain. All are domain-absolute by design,
+    so the entity survives the move from the github.io preview URL to stayfoundoptimized.com.
+  - sameAs stays empty until real profiles exist. An empty array is honest; a fabricated one is a claim.
+  - Before adding a page, add its URL here and to sitemap.xml. Schema must describe what is actually live.
 -->
 <script type="application/ld+json">
 {
@@ -26,6 +43,8 @@
       "alternateName": "Stayfound Optimized",
       "description": "AI search visibility, answer engine optimization, and local SEO for local service businesses, mission-driven organizations, and legacy family businesses in Colorado.",
       "url": "https://stayfoundoptimized.com/",
+      "logo": "https://stayfoundoptimized.com/og.png",
+      "image": "https://stayfoundoptimized.com/og.png",
       "email": "focusandexcell@gmail.com",
       "telephone": "+1-970-212-8486",
       "foundingDate": "2025-09-08",
@@ -76,7 +95,7 @@
       "@type": "WebPage",
       "@id": "https://stayfoundoptimized.com/#webpage",
       "url": "https://stayfoundoptimized.com/",
-      "name": "Stayfound Optimized — AI Search Visibility & Local SEO",
+      "name": "Stayfound Optimized: AI Search Visibility and Local SEO",
       "isPartOf": { "@id": "https://stayfoundoptimized.com/#website" },
       "about": { "@id": "https://stayfoundoptimized.com/#business" },
       "breadcrumb": { "@id": "https://stayfoundoptimized.com/#breadcrumb" }
@@ -101,7 +120,9 @@
         { "@type": "Question", "name": "Is there a contract?",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Services are month to month with no long-term contract, because the work should earn its place every month." } },
         { "@type": "Question", "name": "What if I am not sure this will work for my business?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Start with the Foundation Audit. It is a one-time engagement that shows where the business actually stands, and the client owns the findings whether or not the relationship continues." } }
+          "acceptedAnswer": { "@type": "Answer", "text": "Start with the Foundation Audit. It is a one-time engagement that shows where the business actually stands, and the client owns the findings whether or not the relationship continues." } },
+        { "@type": "Question", "name": "What does correct mean, exactly?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It means the assistant describes you the way you would describe yourself: right services, right area, right hours, no invented facts, no stale address, and no competitor's details bleeding into your listing. Being named and being described correctly are two different problems, and the second one is harder." } }
       ]
     }
   ]
@@ -109,170 +130,370 @@
 </script>
 
 <style>
-  :root { --ink:#14181d; --muted:#5a6570; --line:#e3e7eb; --accent:#1f5f4b; --bg:#fbfbfa; --card:#fff; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-         font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         -webkit-font-smoothing:antialiased; }
-  .wrap { max-width:46rem; margin:0 auto; padding:4rem 1.5rem 6rem; }
-  h1 { font-size:2.1rem; line-height:1.2; letter-spacing:-.02em; margin:0 0 1.25rem; }
-  h2 { font-size:1.02rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
-       margin:3.25rem 0 .85rem; font-weight:600; }
-  p { margin:0 0 1.1rem; }
-  .lede { font-size:1.2rem; color:var(--muted); }
-  .proof { border-left:3px solid var(--accent); padding:.2rem 0 .2rem 1.2rem; margin:2rem 0; }
-  ul { padding-left:1.15rem; margin:0 0 1.1rem; }
-  li { margin-bottom:.45rem; }
-  .cta { display:inline-block; margin-top:1.5rem; background:var(--accent); color:#fff;
-         text-decoration:none; padding:.85rem 1.5rem; border-radius:6px; font-weight:600; }
-  .cta:hover { background:#17483a; }
-  .tiers { display:grid; gap:1rem; margin:1.5rem 0 0; }
-  .tier { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1.35rem 1.4rem; }
-  .tier h3 { margin:0 0 .2rem; font-size:1.12rem; letter-spacing:-.01em; }
-  .tier .price { color:var(--accent); font-weight:600; margin:0 0 .7rem; font-size:.95rem; }
-  .tier p { font-size:.95rem; color:var(--muted); margin:0 0 .8rem; }
-  .tier ul { font-size:.95rem; margin:0; }
-  .flag { background:#fff8e6; border:1px solid #f0dfae; border-radius:8px; padding:1rem 1.15rem;
-          font-size:.92rem; margin:1.5rem 0 0; }
-  details { border-bottom:1px solid var(--line); padding:.85rem 0; }
-  summary { cursor:pointer; font-weight:600; font-size:.98rem; }
-  details p { margin:.7rem 0 0; font-size:.95rem; color:var(--muted); }
-  footer { margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--line);
-           color:var(--muted); font-size:.92rem; }
-  a { color:var(--accent); }
-  @media (min-width:640px){ .tiers { grid-template-columns:1fr 1fr; } }
+  :root{
+    --paper:#FBFAF7; --ink:#16191C; --muted:#5C6672; --line:#E4E2DC;
+    --pine:#1B5744; --pine-deep:#123A2D; --card:#FFFFFF;
+    --serif: ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;}
+  a{color:var(--pine)}
+  .shell{max-width:52rem;margin:0 auto;padding:0 1.5rem}
+
+  /* ---------- masthead ---------- */
+  header.bar{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.86);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+  .bar .shell{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:3.75rem}
+  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-weight:650;letter-spacing:-.01em;font-size:.98rem;white-space:nowrap}
+  .brand svg{flex:none}
+  nav.links{display:flex;gap:1.5rem;font-size:.9rem}
+  nav.links a{color:var(--muted);text-decoration:none}
+  nav.links a:hover{color:var(--pine)}
+  @media (max-width:700px){ nav.links{display:none} }
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .topo{position:absolute;inset:0;opacity:.5;pointer-events:none;
+    -webkit-mask-image:linear-gradient(103deg,transparent 0 22%,rgba(0,0,0,.45) 46%,#000 76%);
+    mask-image:linear-gradient(103deg,transparent 0 22%,rgba(0,0,0,.45) 46%,#000 76%)}
+  .hero .shell{position:relative;padding:5.5rem 1.5rem 5rem}
+  .eyebrow{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:var(--pine);font-weight:650;margin:0 0 1.4rem}
+  h1{text-wrap:balance;font-family:var(--serif);font-weight:600;font-size:clamp(2rem,5.2vw,3.1rem);line-height:1.14;letter-spacing:-.02em;margin:0 0 1.35rem;max-width:22ch}
+  .lede{font-size:clamp(1.05rem,2.2vw,1.25rem);line-height:1.55;color:var(--muted);margin:0;max-width:44ch}
+  .act{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+  .cta{display:inline-block;background:var(--pine);color:#fff;text-decoration:none;padding:.9rem 1.6rem;border-radius:7px;font-weight:640;font-size:.98rem;border:1px solid var(--pine)}
+  .cta:hover{background:var(--pine-deep)}
+  .cta.ghost{background:transparent;color:var(--pine);border-color:var(--line)}
+  .cta.ghost:hover{background:rgba(27,87,68,.06);border-color:var(--pine)}
+
+  /* ---------- sections ---------- */
+  section{padding:4rem 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{text-wrap:balance;font-family:var(--serif);font-size:1.65rem;font-weight:600;letter-spacing:-.015em;margin:0 0 1.4rem}
+  .kicker{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:650;margin:0 0 .7rem}
+  p{margin:0 0 1.05rem;max-width:62ch}
+  .prose p:last-child{margin-bottom:0}
+  ul{padding-left:1.1rem;margin:0 0 1.05rem;max-width:62ch}
+  li{margin-bottom:.4rem}
+  strong{font-weight:660}
+
+  /* ---------- engines ---------- */
+  .engines{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){ .engines{grid-template-columns:repeat(3,1fr)} }
+  .engine{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.35rem 1.4rem}
+  .engine h3{margin:0 0 .15rem;font-size:1.02rem;letter-spacing:-.01em}
+  .engine .feeds{font-size:.83rem;color:var(--pine);font-weight:650;margin:0 0 .7rem;letter-spacing:.01em}
+  .engine p{font-size:.92rem;color:var(--muted);margin:0;max-width:none}
+
+  /* ---------- proof ---------- */
+  .proof{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--pine);border-radius:0 12px 12px 0;padding:1.6rem 1.7rem}
+  .proof p:last-child{margin-bottom:0}
+  .proof .tag{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--pine);font-weight:680;margin:0 0 .8rem}
+  .proof blockquote{margin:0 0 1.1rem;font-family:var(--serif);font-size:1.22rem;line-height:1.5;letter-spacing:-.01em}
+  .howto{font-size:.9rem;color:var(--muted);margin:0;max-width:none}
+
+  /* ---------- tiers ---------- */
+  .tiers{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){ .tiers{grid-template-columns:1fr 1fr} }
+  .tier{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem 1.5rem 1.6rem;display:flex;flex-direction:column}
+  .tier .kind{font-size:.71rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:680;margin:0 0 .55rem}
+  .tier h3{margin:0 0 .3rem;font-family:var(--serif);font-size:1.3rem;font-weight:600;letter-spacing:-.015em}
+  .tier .price{color:var(--pine);font-weight:680;margin:0 0 .85rem;font-size:1rem}
+  .tier .what{font-size:.94rem;color:var(--muted);margin:0 0 1.1rem}
+  .tier ul{font-size:.94rem;margin:0;padding-left:1.05rem;max-width:none}
+  .tier li{margin-bottom:.5rem}
+  .tier li:last-child{margin-bottom:0}
+  .tier.recurring{border-top:3px solid var(--pine)}
+  .tier .start{margin-top:auto;padding-top:1.3rem}
+  .tier .start a{font-size:.92rem;font-weight:650;text-decoration:none;border-bottom:1px solid rgba(27,87,68,.35)}
+  .note{font-size:.9rem;color:var(--muted);margin:1.4rem 0 0}
+
+  /* ---------- faq ---------- */
+  details{border-bottom:1px solid var(--line);padding:1rem 0}
+  details:first-of-type{border-top:1px solid var(--line)}
+  summary{cursor:pointer;font-weight:640;font-size:1rem;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;color:var(--muted);font-weight:400}
+  details[open] summary::after{content:"\2212"}
+  details p{margin:.75rem 0 0;font-size:.95rem;color:var(--muted);max-width:62ch}
+
+  /* ---------- footer ---------- */
+  footer{padding:3.25rem 0 4rem;color:var(--muted);font-size:.92rem}
+  footer .shell{display:flex;flex-wrap:wrap;gap:1.5rem 2.5rem;justify-content:space-between;align-items:flex-start}
+  footer .fcol{max-width:22rem}
+  footer .brandline{display:flex;align-items:center;gap:.55rem;color:var(--ink);font-weight:650;margin-bottom:.6rem}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--pine)}
+  footer .fine{font-size:.83rem;margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid var(--line);color:#8B939C}
+
+  @media (max-width:520px){ .act{flex-direction:column;align-items:stretch} .act .cta{text-align:center} }
+
+  @media (prefers-color-scheme: dark){
+    :root{--paper:#14171A;--ink:#E8EBEE;--muted:#98A2AC;--line:#272B30;--card:#1A1E22;--pine:#7FC3A7;--pine-deep:#5FA98B}
+    .cta{background:#7FC3A7;color:#101315;border-color:#7FC3A7}
+    .cta:hover{background:#5FA98B;color:#101315}
+    .cta.ghost{background:transparent;color:#7FC3A7;border-color:var(--line)}
+    .cta.ghost:hover{background:rgba(127,195,167,.08);border-color:#7FC3A7}
+    header.bar{background:rgba(20,23,26,.86)}
+    .proof{border-left-color:#7FC3A7}
+    .tier.recurring{border-color:#2E3A34}
+    .hero .topo{opacity:.28}
+  }
 </style>
 </head>
 <body>
-<main class="wrap">
 
-  <h1>Ask an AI for the best cleaner in the Colorado mountains.<br>It names my client.</h1>
-  <p class="lede">I make local and mission-driven businesses the answer AI gives.</p>
-
-  <h2>The problem</h2>
-  <p>Buyers don't scroll anymore. They ask ChatGPT, Claude, Gemini, or Perplexity
-     <em>"who should I hire for this?"</em> and they get one answer with a few names in it.
-     There is no page two. If you aren't in that answer, you were never in the conversation —
-     and it will never show up in your analytics, because there was no click to lose.</p>
-  <p>Almost nobody realizes that <strong>Google, Apple, and Bing each run their own ecosystem</strong>.
-     Google feeds Gemini and AI Overviews. Apple runs Apple Business Connect and feeds Siri.
-     Bing feeds Copilot. Most local businesses are set up in one of the three and invisible in the
-     other two — which is most of the answer.</p>
-
-  <h2>What I do</h2>
-  <ul>
-    <li><strong>Structured data.</strong> Schema that tells machines precisely who you are, what you do, and where you serve.</li>
-    <li><strong>The three engines.</strong> Google Business Profile, Apple Business Connect, and Bing Places claimed and kept identical.</li>
-    <li><strong>Citations.</strong> Your name, address, and phone consistent everywhere — the foundation everything else rests on.</li>
-    <li><strong>Technical SEO.</strong> Audits that find what's actually broken, with the fix delivered, not just described.</li>
-    <li><strong>Content that answers real questions.</strong> The specific, local ones your customers actually type.</li>
-  </ul>
-
-  <div class="proof">
-    <p><strong>Proof:</strong> a Colorado cleaning company came to me uncited and misdescribed by AI
-       assistants. It's now cited and recommended — correctly — across ChatGPT, Claude, Gemini, and
-       Perplexity. You can check it yourself: ask any of them for the best vacation-rental cleaner
-       in the Colorado mountains.</p>
+<header class="bar">
+  <div class="shell">
+    <a class="brand" href="/">
+      <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="13" fill="#1B5744"/>
+        <g fill="#FBFAF7">
+          <ellipse cx="33" cy="47" rx="17" ry="6.1"/>
+          <ellipse cx="29.5" cy="36.4" rx="12.2" ry="5"/>
+          <ellipse cx="34.5" cy="26.6" rx="9.2" ry="4.1"/>
+          <ellipse cx="31.5" cy="18" rx="5.4" ry="3.2"/>
+        </g>
+      </svg>
+      Stayfound Optimized
+    </a>
+    <nav class="links">
+      <a href="#problem">The shift</a>
+      <a href="#work">What I do</a>
+      <a href="#proof">Proof</a>
+      <a href="#packages">Packages</a>
+      <a href="#questions">Questions</a>
+    </nav>
   </div>
+</header>
 
-  <h2>Packages</h2>
-  <p>Month to month. No long contracts, and no cold calls — you came here on purpose.</p>
+<main>
 
-  <div class="tiers">
-    <div class="tier">
-      <h3>The Foundation Audit</h3>
-      <p class="price">$360 one-time</p>
-      <p>Start here if you don't know where you stand. I look at everything and hand you the findings.</p>
-      <ul>
-        <li>Full technical audit of your site</li>
-        <li>Google, Apple, and Bing presence check</li>
-        <li>Citation and NAP consistency review</li>
-        <li>How AI assistants currently describe you</li>
-        <li>Written findings + the fix, delivered</li>
-      </ul>
-    </div>
-
-    <div class="tier">
-      <h3>The Three-Engine Setup</h3>
-      <p class="price">$660 one-time</p>
-      <p>Get properly established in all three ecosystems instead of one.</p>
-      <ul>
-        <li>Google Business Profile claimed and completed</li>
-        <li>Apple Business Connect set up</li>
-        <li>Bing Places set up</li>
-        <li>Structured data / schema on your site</li>
-        <li>Core citations corrected and matched</li>
-      </ul>
-    </div>
-
-    <div class="tier">
-      <h3>Cited and Correct — $470/month</h3>
-      <p class="price">The one nobody else is doing</p>
-      <p>Ongoing work to make sure AI names you, and describes you <em>accurately</em>.</p>
-      <ul>
-        <li>Monthly AI-visibility check across ChatGPT, Claude, Gemini, Perplexity</li>
-        <li>Google Business Profile posts and updates</li>
-        <li>Review monitoring and responses</li>
-        <li>Q&amp;A management</li>
-        <li>Citation maintenance and quarterly cleanup</li>
-        <li>Plain monthly report — what changed and what I did</li>
-      </ul>
-    </div>
-
-    <div class="tier">
-      <h3>The Record — $985/month</h3>
-      <p class="price">For businesses building authority</p>
-      <p>Everything above, plus the content and citations that make the answers stick.</p>
-      <ul>
-        <li>Everything in Cited and Correct</li>
-        <li>Local research content that answers real customer questions</li>
-        <li>Original guides and visual assets</li>
-        <li>Expanded citation and directory build-out</li>
-        <li>Multi-engine consistency across all three ecosystems</li>
-      </ul>
+  <div class="hero">
+    <svg class="topo" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+      <g fill="none" stroke="#1B5744" stroke-width="1" opacity=".30">
+        <path d="M-40,470 C160,430 260,352 420,330 C580,308 660,372 820,346 C980,320 1060,246 1240,214"/>
+        <path d="M-40,428 C150,392 268,318 424,296 C584,274 656,336 824,310 C986,284 1064,212 1240,180"/>
+        <path d="M-40,386 C140,354 276,284 428,262 C588,240 652,300 828,274 C992,248 1068,178 1240,146"/>
+        <path d="M-40,344 C130,316 284,250 432,228 C592,206 648,264 832,238 C998,214 1072,144 1240,112"/>
+        <path d="M-40,302 C120,278 292,216 436,194 C596,172 644,228 836,202 C1004,178 1076,110 1240,78"/>
+        <path d="M-40,260 C110,240 300,182 440,160 C600,138 640,192 840,166 C1010,144 1080,76 1240,44"/>
+      </g>
+    </svg>
+    <div class="shell">
+      <p class="eyebrow">Stayfound Optimized · Black Hawk, Colorado</p>
+      <h1>Ask an AI for the best cleaner in the Colorado mountains. It names my client.</h1>
+      <p class="lede">I make local and mission-driven businesses the answer AI gives. Google, Apple, and Bing. ChatGPT, Claude, Gemini, and Perplexity.</p>
+      <div class="act">
+        <a class="cta" href="#packages">See the packages</a>
+        <a class="cta ghost" href="mailto:focusandexcell@gmail.com?subject=Foundation%20Audit">Start with the Foundation Audit</a>
+      </div>
     </div>
   </div>
 
-  
+  <section id="problem">
+    <div class="shell prose">
+      <p class="kicker">The shift nobody priced in</p>
+      <h2>Buyers don't scroll anymore. They ask.</h2>
+      <p>Someone opens ChatGPT, Claude, Gemini, or Perplexity, types <em>"who should I hire for this?"</em>, and gets one answer with a few names in it. There is no page two. If you aren't in that answer, you were never in the conversation, and it will never show up in your analytics, because there was no click to lose.</p>
+      <p>Almost nobody realizes that <strong>Google, Apple, and Bing each run their own ecosystem</strong>. Google feeds Gemini and AI Overviews. Apple runs Apple Business Connect and feeds Siri. Bing feeds Copilot. Most local businesses are established in one of the three and invisible in the other two, which is most of the answer.</p>
 
-  <h2>Who I work with</h2>
-  <p>Local service businesses, mission-driven organizations, and legacy family businesses in
-     Colorado. I'd rather work with people whose reputation <em>is</em> their business.</p>
+      <div class="engines">
+        <div class="engine">
+          <h3>Google</h3>
+          <p class="feeds">feeds Gemini &amp; AI Overviews</p>
+          <p>Business Profile, website schema, and reviews. The ecosystem most owners have already done, at least partially.</p>
+        </div>
+        <div class="engine">
+          <h3>Apple</h3>
+          <p class="feeds">feeds Siri &amp; Apple Maps</p>
+          <p>Apple Business Connect. Almost never claimed by a small local business, and it is the one Siri reads.</p>
+        </div>
+        <div class="engine">
+          <h3>Bing</h3>
+          <p class="feeds">feeds Copilot &amp; Bing Chat</p>
+          <p>Bing Places. Routinely skipped, and it is the entire grounding layer for Microsoft's assistant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Why me</h2>
-  <p>I spent a decade in the trades — custom doors, trim carpentry, irrigation, landscape
-     construction — before I ever marketed a business. So I read your operation the way an
-     operator does, not the way a dashboard does.</p>
-  <p>And I won't inflate a number. If I can't show you why a claim is true, I won't make it.
-     That's not a slogan — it's the whole reason I'm any good at this.</p>
+  <section id="work">
+    <div class="shell prose">
+      <p class="kicker">What I do</p>
+      <h2>Make the business findable, then make it correct.</h2>
+      <ul>
+        <li><strong>Structured data.</strong> Schema that tells machines precisely who you are, what you do, and where you serve.</li>
+        <li><strong>The three engines.</strong> Google Business Profile, Apple Business Connect, and Bing Places claimed and kept identical.</li>
+        <li><strong>Citations.</strong> Your name, address, and phone consistent everywhere. This is the foundation everything else rests on.</li>
+        <li><strong>Technical SEO.</strong> Audits that find what is actually broken, with the fix delivered rather than described.</li>
+        <li><strong>Content that answers real questions.</strong> The specific, local ones your customers actually type.</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Questions</h2>
-  <details><summary>What is AI answer visibility?</summary>
-    <p>When someone asks an AI assistant for a recommendation, it gives one answer with a short list
-       of names instead of ten links. Whether you're in that list — and whether the description is
-       accurate — depends on signals the assistant can verify: consistent listings, structured data,
-       reviews, and content that answers the question directly. That's what I manage.</p></details>
-  <details><summary>Why do Apple and Bing matter, not just Google?</summary>
-    <p>Siri and Copilot don't read Google. They read Apple Business Connect and Bing Places. A
-       business that's perfect on Google and absent on the other two is invisible to a large share of
-       voice and AI searches, and most owners have never been told.</p></details>
-  <details><summary>How long until I see something?</summary>
-    <p>Established signals can shift in 30 to 60 days; real movement typically lands inside 90.
-       Anyone promising you a specific ranking next week is guessing or lying.</p></details>
-  <details><summary>Do I have to sign a contract?</summary>
-    <p>No. Month to month. I'd rather earn it every month than lock you in.</p></details>
-  <details><summary>What if I'm not sure it'll work for my business?</summary>
-    <p>Start with the Foundation Audit. It's one-time, it tells you where you actually stand, and you
-       own the findings whether or not we keep working together.</p></details>
+  <section id="proof">
+    <div class="shell">
+      <p class="kicker">Proof, and you can check it yourself</p>
+      <h2>Cited and correct, not just cited.</h2>
+      <div class="proof">
+        <p class="tag">Working example</p>
+        <blockquote>Ask any AI assistant for the best vacation-rental cleaner in the Colorado mountains.</blockquote>
+        <p>A Colorado cleaning company came to me uncited and misdescribed by AI assistants. It is now cited and recommended, correctly, across ChatGPT, Claude, Gemini, and Perplexity. Most of the work was making the business <em>accurately</em> described, not merely mentioned, and that distinction is the whole service.</p>
+        <p class="howto">If you want the unedited version of that work, ask me for it. I will show you the before and after rather than a slide.</p>
+      </div>
+    </div>
+  </section>
 
-  <a class="cta" href="mailto:focusandexcell@gmail.com?subject=Foundation%20Audit">Start with the Foundation Audit</a>
+  <section id="packages">
+    <div class="shell">
+      <p class="kicker">Packages</p>
+      <h2>Prices are published. Month to month, no contract.</h2>
+      <p>You came here on purpose, so there are no cold calls and no discovery-call funnel. If you want to start, start with the audit.</p>
 
-  <footer>
-    <p>Stayfound Optimized LLC · Black Hawk, Colorado ·
-       <a href="mailto:focusandexcell@gmail.com">focusandexcell@gmail.com</a> ·
-       (970) 212-8486</p>
-  </footer>
+      <div class="tiers">
+        <div class="tier">
+          <p class="kind">Start here</p>
+          <h3>The Foundation Audit</h3>
+          <p class="price">$360 one-time</p>
+          <p class="what">For when you don't know where you stand. I look at everything and hand you the findings.</p>
+          <ul>
+            <li>Full technical audit of your site</li>
+            <li>Google, Apple, and Bing presence check</li>
+            <li>Citation and NAP consistency review</li>
+            <li>How AI assistants currently describe you</li>
+            <li>Written findings plus the fix, delivered</li>
+          </ul>
+          <div class="start"><a href="mailto:focusandexcell@gmail.com?subject=Foundation%20Audit">Request the audit</a></div>
+        </div>
+
+        <div class="tier">
+          <p class="kind">One-time build</p>
+          <h3>The Three-Engine Setup</h3>
+          <p class="price">$660 one-time</p>
+          <p class="what">Get properly established in all three ecosystems instead of one.</p>
+          <ul>
+            <li>Google Business Profile claimed and completed</li>
+            <li>Apple Business Connect set up</li>
+            <li>Bing Places set up</li>
+            <li>Structured data and schema on your site</li>
+            <li>Core citations corrected and matched</li>
+          </ul>
+          <div class="start"><a href="mailto:focusandexcell@gmail.com?subject=Three-Engine%20Setup">Set up all three</a></div>
+        </div>
+
+        <div class="tier recurring">
+          <p class="kind">Ongoing</p>
+          <h3>Cited and Correct</h3>
+          <p class="price">$470 / month</p>
+          <p class="what">Ongoing work to make sure AI names you, and describes you accurately.</p>
+          <ul>
+            <li>Monthly AI-visibility check across ChatGPT, Claude, Gemini, and Perplexity</li>
+            <li>Google Business Profile posts and updates</li>
+            <li>Review monitoring and responses</li>
+            <li>Q&amp;A management</li>
+            <li>Citation maintenance and quarterly cleanup</li>
+            <li>Plain monthly report: what changed and what I did</li>
+          </ul>
+          <div class="start"><a href="mailto:focusandexcell@gmail.com?subject=Cited%20and%20Correct">Ask about this one</a></div>
+        </div>
+
+        <div class="tier recurring">
+          <p class="kind">Ongoing, building authority</p>
+          <h3>The Record</h3>
+          <p class="price">$985 / month</p>
+          <p class="what">Everything above, plus the content and citations that make the answers stick.</p>
+          <ul>
+            <li>Everything in Cited and Correct</li>
+            <li>Local research content that answers real customer questions</li>
+            <li>Original guides and visual assets</li>
+            <li>Expanded citation and directory build-out</li>
+            <li>Multi-engine consistency across all three ecosystems</li>
+          </ul>
+          <div class="start"><a href="mailto:focusandexcell@gmail.com?subject=The%20Record">Ask about this one</a></div>
+        </div>
+      </div>
+
+      <p class="note">Every engagement starts with a real look at the actual state of the business. If the audit says the problem is somewhere other than where you thought, that is what you paid $360 to find out.</p>
+    </div>
+  </section>
+
+  <section id="who">
+    <div class="shell prose">
+      <p class="kicker">Who I work with</p>
+      <h2>People whose reputation is their business.</h2>
+      <p>Local service businesses, mission-driven organizations, and legacy family businesses in Colorado. Established operators who already do good work and are losing the argument to businesses that merely market better.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="shell prose">
+      <p class="kicker">Why me</p>
+      <h2>A decade in the trades before I ever marketed anything.</h2>
+      <p>Custom doors, trim carpentry, irrigation, landscape construction. I read your operation the way an operator reads it, not the way a dashboard does.</p>
+      <p>And I won't inflate a number. If I can't show you why a claim is true, I won't make it. That isn't a slogan. It's the entire reason I'm any good at this.</p>
+    </div>
+  </section>
+
+  <section id="questions">
+    <div class="shell">
+      <p class="kicker">Questions</p>
+      <h2>The ones people actually ask.</h2>
+
+      <details><summary>What is AI answer visibility?</summary>
+        <p>When someone asks an AI assistant for a recommendation, it gives one answer with a short list of names instead of ten links. Whether you're in that list, and whether the description is accurate, depends on signals the assistant can verify: consistent listings, structured data, reviews, and content that answers the question directly. That's what I manage.</p></details>
+
+      <details><summary>Why do Apple and Bing matter, not just Google?</summary>
+        <p>Siri and Copilot don't read Google. They read Apple Business Connect and Bing Places. A business that's perfect on Google and absent on the other two is invisible to a large share of voice and AI searches, and most owners have never been told.</p></details>
+
+      <details><summary>How long until I see something?</summary>
+        <p>Established signals can shift in 30 to 60 days. Real movement typically lands inside 90. Anyone promising you a specific ranking next week is guessing or lying.</p></details>
+
+      <details><summary>Do I have to sign a contract?</summary>
+        <p>No. Month to month. I'd rather earn it every month than lock you in.</p></details>
+
+      <details><summary>What if I'm not sure it'll work for my business?</summary>
+        <p>Start with the Foundation Audit. It's one-time, it tells you where you actually stand, and you own the findings whether or not we keep working together.</p></details>
+
+      <details><summary>What does "correct" mean, exactly?</summary>
+        <p>It means the assistant describes you the way you'd describe yourself: right services, right area, right hours, no invented facts, no stale address, no competitor's details bleeding into your listing. Being named and being described correctly are two different problems, and the second one is harder.</p></details>
+
+      <div class="act">
+        <a class="cta" href="mailto:focusandexcell@gmail.com?subject=Foundation%20Audit">Start with the Foundation Audit</a>
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<footer>
+  <div class="shell">
+    <div class="fcol">
+      <p class="brandline">
+        <svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="13" fill="#1B5744"/>
+          <g fill="#FBFAF7">
+            <ellipse cx="33" cy="47" rx="17" ry="6.1"/>
+            <ellipse cx="29.5" cy="36.4" rx="12.2" ry="5"/>
+            <ellipse cx="34.5" cy="26.6" rx="9.2" ry="4.1"/>
+            <ellipse cx="31.5" cy="18" rx="5.4" ry="3.2"/>
+          </g>
+        </svg>
+        Stayfound Optimized LLC
+      </p>
+      <p style="margin:0">AI search visibility and local SEO. Black Hawk, Colorado. Serving Colorado businesses and the Peak to Peak corridor.</p>
+    </div>
+    <div class="fcol">
+      <p style="margin:0 0 .5rem"><a href="mailto:focusandexcell@gmail.com">focusandexcell@gmail.com</a></p>
+      <p style="margin:0 0 .5rem"><a href="tel:+19702128486">(970) 212-8486</a></p>
+      <p style="margin:0"><a href="#packages">Packages and pricing</a></p>
+    </div>
+  </div>
+  <div class="shell">
+    <p class="fine">Every claim about a client's visibility on this site is backed by a measurement I can show you on request. © 2026 Stayfound Optimized LLC.</p>
+  </div>
+</footer>
+
 </body>
 </html>
