@@ -1,6 +1,6 @@
 # stayfound-site
 
-Source for **stayfoundoptimized.com** — the Stayfound Optimized website.
+Source for **stayfoundoptimized.com**: the Stayfound Optimized website.
 
 Static HTML. Served by GitHub Pages from the `main` branch root.
 
@@ -8,13 +8,21 @@ Static HTML. Served by GitHub Pages from the `main` branch root.
 
 | File | Purpose |
 |---|---|
-| `index.html` | The site. One self-contained page with a full JSON-LD `@graph`. |
+| `index.html` | The homepage with the entity, audit, answer-receipt, method, offer, and fit narrative. |
+| `audit/` | The Public Record Audit detail page. |
+| `how-it-works/` | The step-by-step process page. |
+| `method/` | The public method and evidence-label page. |
+| `results/` | The permissioned proof and answer-receipt library draft. |
+| `about/` | Chris's operator-story page. |
+| `assets/draft-pages.css` | Shared CSS for the supporting draft pages. |
 | `favicon.svg` | The cairn mark. Stack of irregular stones on pine. |
 | `apple-touch-icon.png` | 180x180 home-screen icon, same mark. |
 | `og.png` | 1200x630 social card, referenced by `og:image` and `twitter:image`. |
-| `robots.txt` | Explicitly allows AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Applebot, Bingbot). |
-| `sitemap.xml` | Single-URL sitemap. |
-| `.nojekyll` | Disables Jekyll — ship the files exactly as written. |
+| `robots.txt` | Allows search and answer-engine crawlers. |
+| `sitemap.xml` | Sitemap for the homepage and supporting draft pages. |
+| `llms.txt` | Concise, human-checked context for AI systems and agents. |
+| `CNAME` | Maps GitHub Pages to `stayfoundoptimized.com`. |
+| `.nojekyll` | Disables Jekyll: ship the files exactly as written. |
 
 ## Deploy
 
@@ -23,19 +31,15 @@ Settings → Pages → Source: `main` / `(root)`.
 DNS for the apex domain points at GitHub Pages' four A records plus the four AAAA records.
 Do not enable a proxy in front of them until GitHub has issued the HTTPS certificate.
 
-## ⚠ The `CNAME` file is deliberately absent
+## Custom domain
 
-It was removed in `d578554` (2026-10-03). With Pages enabled **and** a `CNAME` naming a domain
-that does not resolve, GitHub serves the site on the dead domain and redirects the working
-`github.io` URL to it. **Do not add it back until `stayfoundoptimized.com` actually resolves**
-(its Route 53 hosted zone is gone; see `stayfound-vault/site/DOMAIN-STATUS.md`).
+`stayfoundoptimized.com` now resolves through IONOS to GitHub Pages. The one-line `CNAME`
+file is present, and GitHub Pages has an approved certificate for the apex and `www` host.
+The repository Pages setting still needs **Enforce HTTPS** enabled manually when convenient.
 
-The value to restore when the time comes is one line: `stayfoundoptimized.com`
+## Domain-absolute URLs
 
-## Domain-absolute URLs pending the domain move
-
-These are correct final values, and they are inert until `stayfoundoptimized.com` resolves.
-They are intentionally left domain-absolute so the entity `@id`s survive the move.
+These are final values and are intentionally domain-absolute so the entity `@id`s remain stable.
 
 - `<link rel="canonical">`
 - `<meta property="og:url">` and `og:image` / `twitter:image`
